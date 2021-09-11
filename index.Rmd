@@ -31,7 +31,7 @@ cw %>%
 <br>
 <br>
 
-Download the excel file here
+Download the excel file [here](https://github.com/dvannanda/clone-wars/raw/main/data/Clone%20Wars.xlsx)
 
 ```{css}
 img {

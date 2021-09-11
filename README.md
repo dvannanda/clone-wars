@@ -8,7 +8,3 @@ Because for some reason, Clone Wars wasn't released in chronological order.
 ## Images
 
 https://www.wallpaperflare.com/clone-trooper-star-wars-wallpaper-sgvtv
-
-## Fonts
-
-https://www.dafont.com/star-jedi.font
