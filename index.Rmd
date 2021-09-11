@@ -1,0 +1,44 @@
+---
+title: "Clone Wars Episode Order"
+date: "Updated `r format(Sys.Date(), '%d %B %Y')`"
+output: 
+  html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(tidyverse)
+library(kableExtra)
+```
+
+![](https://c4.wallpaperflare.com/wallpaper/340/241/208/clone-trooper-star-wars-wallpaper-preview.jpg)
+
+```{r}
+# import data
+cw <- 
+  readxl::read_xlsx("data/Clone Wars.xlsx") %>% 
+  select(-Notes)
+
+cw %>% 
+  mutate(Arc = replace_na(Arc, "")) %>% 
+  kable() %>% 
+  kable_styling(bootstrap_options = c("striped", "hover"),
+                font_size = 14)
+
+```
+
+<br>
+<br>
+
+Download the excel file here
+
+```{css}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+```
+
